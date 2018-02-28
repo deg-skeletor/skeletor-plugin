@@ -5,7 +5,7 @@ To learn more about Skeletor, [go here](https://github.com/deg-skeletor/skeletor
 ## Getting Started
 After you have cloned this repository, run `npm install` in a terminal to install some necessary tools, including a testing framework (Jest) and a linter (ESLint). 
 ## Source Code
-The primary source code for this sample plugin is located in the `index.js` file, which contains an example implementation of the [Skeletor plugin API](#Skeletor-Plugin-API). This file is where you will begin writing your own plugin code.
+The primary source code for this sample plugin is located in the `index.js` file, which contains an example implementation of the [Skeletor plugin API](#skeletor-plugin-api). This file is where you will begin writing your own plugin code.
 ## Running Tests
 This sample plugin is pre-configured with the [Jest testing framework](https://facebook.github.io/jest/) and an example test. 
 From a terminal, run `npm test`. You should see one test pass and feel pleased.
@@ -20,7 +20,7 @@ The `run()` method executes a plugin's primary task, whatever that task may be. 
 Type: `Object`
 The `config` parameter is an object that contains configuration information specific to your plugin. The shape and content of this configuration object are based on the needs of your plugin and defined by you, the plugin maker.
 #### Return Value
-A Promise that resolves to a [Status object](#The-Status-Object).
+A Promise that resolves to a [Status object](#the-status-object).
 ### The Status Object
 The Status object is a simple Javascript `Object` for storing the current status of your plugin. The structure of this object is as follows:
 #### Properties
