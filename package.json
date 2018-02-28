@@ -1,0 +1,24 @@
+{
+  "name": "skeletor-plugin",
+  "version": "0.1.0",
+  "description": "A sample Skeletor plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deg-skeletor/skeletor-plugin.git"
+  },
+  "peerDependencies": {
+    "skeletor-core": "git+https://github.com/deg-skeletor/skeletor-core.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "jest": "^22.2.1"
+  }
+}

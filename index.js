@@ -1,28 +1,26 @@
-const skeletorPlugin = () => {
+const run = config => {
 
-	/* 
-		API Method: run
-		Description: Runs plugin
-		Returns: promise
-		
-		Parameter: config
-		Type: string|object|function
-		Required: true
-		Example: () => 'TBD'
-
-		Parameter: options
-		Type: object
-		Required: false
-		Example: { debug: true }
-	*/
-
-	const run = (config, options) => {
-
-	}
-
-	return {
-		run
-	};
+	//return a Promise
+	return new Promise((resolve, reject) => {
+		try {
+			//do something useful here and return a complete status object
+			resolve({
+				status: 'complete',
+				message: 'Sample plugin complete'
+			});
+		} catch(e) {
+			//if anything goes wrong, return an error status object
+			reject({
+				status: 'error',
+				error: e
+			});
+		}
+	});
 };
 
-module.exports = skeletorPlugin;
+//Our plugin must expose a 'run' method
+module.exports = skeletorPluginSample = () => (
+	{
+		run
+	}
+);
