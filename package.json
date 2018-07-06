@@ -1,6 +1,6 @@
 {
   "name": "skeletor-plugin",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A sample Skeletor plugin",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/deg-skeletor/skeletor-plugin.git"
   },
   "peerDependencies": {
-    "skeletor-core": "git+https://github.com/deg-skeletor/skeletor-core.git"
+    "@deg-skeletor/core": "^1.0.0"
   },
   "dependencies": {},
   "devDependencies": {

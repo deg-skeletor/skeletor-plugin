@@ -13,12 +13,15 @@ Test code can be found in the `index.test.js` file. You are highly encouraged to
 ## Skeletor Plugin API
 For a Skeletor plugin to function within the Skeletor ecosystem, it must expose a simple API that the Skeletor task runner will interact with. This sample plugin contains a basic implementation of the API, which you can find in the `index.js` file.
 The method signatures of the API are as follows:
-### run(config)
+### run(config, options)
 The `run()` method executes a plugin's primary task, whatever that task may be. It is the primary way (and, currently, the *only* way) that the Skeletor task runner interacts with a plugin.
 #### Parameters
 **config**
 Type: `Object`
 The `config` parameter is an object that contains configuration information specific to your plugin. The shape and content of this configuration object are based on the needs of your plugin and defined by you, the plugin maker.
+##options**
+Type: 'Object'
+The `options` parameter is an object that contains additional options for your plugin. These options include useful utilities like a `logger` instance for displaying information or errors to the user. Information on the source of the task currently being run (for example, a watched file that changed) is also included.
 #### Return Value
 A Promise that resolves to a [Status object](#The-Status-Object).
 ### The Status Object
