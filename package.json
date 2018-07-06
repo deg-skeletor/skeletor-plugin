@@ -1,5 +1,5 @@
 {
-  "name": "skeletor-plugin",
+  "name": "@deg-skeletor/plugin",
   "version": "1.0.0",
   "description": "A sample Skeletor plugin",
   "main": "index.js",
